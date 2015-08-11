@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'articles#index'
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
