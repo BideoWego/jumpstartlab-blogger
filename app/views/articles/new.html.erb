@@ -2,10 +2,6 @@
 	Create a New Article
 </h1>
 
-<%= form_for(@article) do |f| %>
-	<%= error_messages_for(@article) %>
-
-	<%= render(:partial => 'form', :locals => {:f => f}) %>
-<% end %>
+<%= render(:partial => 'form', :locals => {:article => @article}) %>
 
 <%= link_to("< Back", articles_path) %>

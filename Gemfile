@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# File attachment
+gem 'paperclip'
+
+# ----
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
