@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Auth
+gem 'sorcery'
+
 # File attachment
 gem 'paperclip'
 
