@@ -1,0 +1,11 @@
+<h1>
+	Edit a Tag
+</h1>
+
+<%= form_for(@tag) do |f| %>
+	<%= error_messages_for(@tag) %>
+
+	<%= render(:partial => 'form', :locals => {:f => f}) %>
+<% end %>
+
+<%= link_to("< Back", tags_path) %>
